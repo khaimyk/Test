@@ -255,10 +255,10 @@
 
 
   
-    <!-- Final Popup -->
+  <!-- Final Popup -->
 <div
   id="finalPopup"
-  class="fixed container inset-0 bg-black bg-opacity-60 flex items-center justify-center text-white z-40 overflow-hidden"
+  class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center text-white z-40 overflow-hidden"
   x-cloak
 >
   <div
@@ -267,7 +267,7 @@
     <img
       src="./images/logo.webp"
       alt="Logo"
-      class="logo-img absolute -top-32 w-72 object-cover z-10"
+      class="logo2-img absolute -top-32 w-72 object-cover z-10"
     />
 
     <img
@@ -277,11 +277,10 @@
     />
 
     <h2
-      class="popup-heading text-center text-6xl font-bold uppercase z-20"
+      class="popup-heading text-center mt-24 text-6xl font-bold uppercase z-20"
       style="font-family: 'Changa One', sans-serif"
     >
-      WELL 
-      DONE!
+      WELL <br />DONE!
     </h2>
 
     <p
@@ -305,15 +304,15 @@
       + 250 Free Spins
     </p>
 
-    <div class="flex flex-row items-center justify-between z-20">
+    <div class="flex flex-row items-center justify-between z-20 popup-text-box">
       <img src="./images/done.svg" alt="Done" class="w-24" />
-      <p class="font-bold popup-text text-xl" style="font-family: 'Changa One', sans-serif">
+      <p class="popup-text font-bold text-xl" style="font-family: 'Changa One', sans-serif">
         Turn on notifications and receive more special bonuses!
       </p>
     </div>
 
     <!-- Offers Button -->
-    <div class="flex justify-center  z-30">
+    <div class="flex justify-center   z-30">
       <button
         id="{offer}"
         class="popup-btn relative w-80 h-32 mt-4 text-white text-xl font-bold uppercase transition duration-300 overflow-hidden"
@@ -328,21 +327,10 @@
 
         <div class="relative z-10 flex flex-col items-center justify-center h-full leading-none text-center">
           <div>
-            <span class="neon-outline">I</span>
-            <span class="neon-outline">N</span>
-            <span class="neon-outline">S</span>
-            <span class="neon-outline">T</span>
-            <span class="neon-outline">A</span>
-            <span class="neon-outline">L</span>
-            <span class="neon-outline">L</span>
+            <span class="neon-outline">I</span><span class="neon-outline">N</span><span class="neon-outline">S</span><span class="neon-outline">T</span><span class="neon-outline">A</span><span class="neon-outline">L</span><span class="neon-outline">L</span>
           </div>
           <div class="mt-1">
-            <span class="neon-outline">T</span>
-            <span class="neon-outline">H</span>
-            <span class="neon-outline">E</span>
-            <span class="neon-outline pl-2">A</span>
-            <span class="neon-outline">P</span>
-            <span class="neon-outline">P</span>
+            <span class="neon-outline">T</span><span class="neon-outline">H</span><span class="neon-outline">E</span><span class="neon-outline pl-2">A</span><span class="neon-outline">P</span><span class="neon-outline">P</span>
           </div>
         </div>
       </button>
@@ -351,23 +339,24 @@
 
   <!-- Countdown -->
   <div
-    class="bonus-countdown absolute text-xs z-20 bottom-4 rounded-sm fon-gradient text-white py-6 text-center"
+    class="bonus-countdown absolute text-xs z-20 bottom-4 rounded-sm fon-gradient text-white  px-4 text-center"
     style="font-family: 'Titan One', cursive; box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.8);"
   >
     <p class="mb-1">Bonus will expire in:</p>
     <div class="flex justify-center items-start text-white font-bold leading-tight">
       <div class="text-center">
-        <span id="countdown-minutes" class="text-4xl pr-2 font-bold">15</span><br />
+        <span id="countdown-minutes" class="countdown-digit text-4xl pr-2 font-bold">15</span><br />
         <span class="text-xs font-normal uppercase">MINUTES</span>
       </div>
-      <span class="text-4xl font-bold">:</span>
+      <span class="countdown-digit text-4xl font-bold">:</span>
       <div class="text-center">
-        <span id="countdown-seconds" class="text-4xl font-bold">00</span><br />
+        <span id="countdown-seconds" class="countdown-digit text-4xl font-bold">00</span><br />
         <span class="text-xs font-normal uppercase">SECONDS</span>
       </div>
     </div>
   </div>
 </div>
+
 
 
     <script src="js.js"></script>
