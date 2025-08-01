@@ -1,0 +1,238 @@
+/* Анімація прогресу завантаження */
+.loader-progress {
+  width: 0%;
+  animation: progress 2.5s ease-in-out infinite;
+}
+
+@media (max-height: 750px) {
+  .fisher-img {
+    max-width: 24rem;
+  }
+  .loader-box {
+    bottom: 8rem !important;
+  }
+  .logo-img {
+    top: -5rem !important;
+    width: 14rem !important;
+  }
+  .wow-text {
+    margin-top: 8rem !important;
+  }
+  .wow-text span {
+    font-size: 3.5rem !important;
+  }
+  .spins-text {
+    font-size: 3.5rem !important;
+  }
+  .disclaimer p {
+    font-size: 1.5rem !important;
+  }
+  .action-btn {
+    height: 6rem !important;
+  }
+  .logo-img {
+    width: 10rem !important;
+  }
+
+  .fisher2-img {
+    width: 16rem !important;
+  }
+  .spin-btn {
+    margin-bottom: 4rem !important;
+  }
+  .container {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+  .logo-img {
+    top: -5rem !important;
+    width: 14rem !important;
+  }
+
+  .popup-heading {
+    font-size: 2.5rem !important;
+  }
+
+  .popup-subtitle {
+    font-size: 2rem !important;
+  }
+
+  .popup-amount {
+    font-size: 3rem !important;
+  }
+
+  .popup-bonus {
+    font-size: 1.5rem !important;
+    margin-bottom: 0;
+  }
+
+  .popup-btn {
+    height: 7rem !important;
+    margin: 1rem !important;
+  }
+  .popup-text {
+    font-size: 1rem !important;
+  }
+
+  .bonus-countdown {
+    transform: scale(0.9);
+    bottom: 1rem !important;
+  }
+}
+@media (min-height: 800px) {
+  .fisher-img {
+    max-width: 32rem;
+  }
+  .loader-box {
+    bottom: 12rem !important;
+  }
+
+  .spin-btn {
+    height: 5rem !important;
+    margin-top: 4rem !important;
+  }
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+    transform: translateX(-50%);
+  }
+  50% {
+    width: 100%;
+    transform: translateX(0%);
+  }
+  100% {
+    width: 0%;
+    transform: translateX(50%);
+  }
+}
+
+/* Анімація обертання кокоса */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1.5s linear infinite;
+}
+
+/* Анімація пульсації логотипу */
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+/* Анімація підскоку рибалки */
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+/* фон лоадера  */
+.bg-loader {
+  background-color: rgba(7, 3, 52, 0.86);
+}
+.bg-progress {
+  background-color: rgba(53, 37, 234, 0.86);
+}
+@keyframes neonPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 12px #ff00cc, 0 0 24px #ff00cc, inset 0 0 8px #ff00cc;
+  }
+  50% {
+    box-shadow: 0 0 24px #ff00cc, 0 0 48px #ff00cc, inset 0 0 12px #ff00cc;
+  }
+}
+#spinBtn {
+  animation: neonPulse 1.5s infinite;
+}
+
+#spinBtn {
+  animation: electricBorder 1.8s infinite ease-in-out;
+}
+
+.gradient-letter {
+  background: linear-gradient(to bottom, #dcefff 40%, #c079e9 50%, #f0cdff 80%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.5px #360443;
+}
+.fon-gradient {
+  background: linear-gradient(to bottom, #10738e, #265e98);
+}
+.slot-item {
+  height: 4.75rem;
+  width: 8rem;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.slot-item:hover {
+  transform: scale(1.05);
+}
+
+#spinBtn.spinning {
+  animation: pulse 0.5s infinite alternate;
+  opacity: 0.7;
+}
+
+/* Smooth transitions for columns */
+#col1,
+#col2,
+#col3 {
+  transition: transform 0.1s ease-out;
+}
+.neon-outline {
+  color: white;
+  -webkit-text-stroke: 1.5px #360443;
+  text-shadow: 0 0 6px rgba(54, 4, 67, 0.6);
+}
+.animate-pulse-slow {
+  animation: pulseSlow 3s infinite ease-in-out;
+}
+@keyframes pulseSlow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+#loaderProgress {
+  transition: transform 0.1s linear;
+}
+#loaderGradient {
+  transition: width 0.1s linear;
+}
+.loader-box {
+  background: #0f172a;
+}
